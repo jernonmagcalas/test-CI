@@ -16,4 +16,4 @@ git fetch repoo
 git stash
 git checkout repoo/staging
 git merge $TRAVIS_COMMIT
-git push
+git push https://jernonmagcalas:shylentnyt01@github.com/$TRAVIS_REPO_SLUG.git staging
