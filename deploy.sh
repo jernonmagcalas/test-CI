@@ -17,4 +17,4 @@ git fetch repoo
 git stash
 git checkout repoo/staging
 git merge $TRAVIS_COMMIT
-git push https://c32eb8616a51943af4dea2895426f5fbc07f5aaa@github.com/$TRAVIS_REPO_SLUG.git staging
+git push https://c32eb8616a51943af4dea2895426f5fbc07f5aaa@github.com/$TRAVIS_REPO_SLUG.git HEAD:staging
