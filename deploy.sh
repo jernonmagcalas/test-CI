@@ -3,6 +3,8 @@ if [ $TRAVIS_PULL_REQUEST = false ]; then
     exit 0;
 fi
 
+set -ev
+
 if[ $(TRAVIS_BRANCH) = 'staging' ] && (exit 0;)
 
 git config --global user.email = 'jernonmagcalas@gmail.com'
@@ -14,4 +16,4 @@ git fetch repoo
 git stash
 git checkout repoo/staging
 git merge $TRAVIS_COMMIT
-git push repoo staging
+git push repoo/staging
