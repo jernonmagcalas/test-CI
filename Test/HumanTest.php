@@ -20,4 +20,12 @@ class HumanTest extends \PHPUnit_Framework_TestCase
 
         $this->assertInstanceOf('Source\Person', $human);
     }
+
+    public function testSetName()
+    {
+        $human = new Human('clark');
+        $human->setName('jernon');
+
+        $this->assertEquals('jernon', $human->getName());
+    }
 }
