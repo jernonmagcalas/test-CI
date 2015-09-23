@@ -1,1 +1,1 @@
-echo "Knowledge is Power"
+echo "${TRAVIS_PULL_REQUEST}"
