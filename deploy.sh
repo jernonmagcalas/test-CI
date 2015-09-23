@@ -16,4 +16,4 @@ git fetch repoo
 git stash
 git checkout repoo/staging
 git merge $TRAVIS_COMMIT
-git push repoo/staging
+git push repoo staging
