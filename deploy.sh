@@ -5,8 +5,8 @@ fi
 
 if[ $(TRAVIS_BRANCH) = 'staging' ] && (exit 0;)
 
-export GIT_COMMITTER_EMAIL='jernonmagcalas@gmail.com'
-export GIT_COMMITTER_NAME='jernon magcalas'
+git config --global user.email = 'jernonmagcalas@gmail.com'
+git config --global user.name = 'jernon magcalas'
 
 echo "$TRAVIS_REPO_SLUG"
 git remote add repoo https://$username:$password@github.com/$TRAVIS_REPO_SLUG.git
