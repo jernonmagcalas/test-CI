@@ -19,6 +19,7 @@ class PersonTest extends \PHPUnit_Framework_TestCase
     {
         $obj = new Person('jernon');
         $this->assertEquals('jernon', $obj->getName());
+
     }
 
 }
