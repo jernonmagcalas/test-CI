@@ -6,6 +6,7 @@ if[ $TRAVIS_BRANCH = 'staging' ]; then
     exit 0;
 fi
 
+
 echo "$TRAVIS_REPO_SLUG"
 git remote add repoo https://$username:$password@github.com/$TRAVIS_REPO_SLUG.git
 #git fetch repoo
