@@ -1,8 +1,8 @@
-if[$TRAVIS_PULL_REQUEST = false]; then
+if [ $TRAVIS_PULL_REQUEST = false ]; then
     exit 0;
 fi
 
-if[$TRAVIS_BRANCH = 'staging']; then
+if[ $TRAVIS_BRANCH = 'staging' ]; then
     exit 0;
 fi
 
