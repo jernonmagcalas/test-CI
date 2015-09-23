@@ -1,6 +1,6 @@
 echo "$TRAVIS_REPO_SLUG"
-git remote add origin https://github.com/$TRAVIS_REPO_SLUG.git
-git fetch origin
-git checkout origin master
-git merge origin staging
-git push origin master
+git remote add repoo https://github.com/$TRAVIS_REPO_SLUG.git
+git fetch repoo
+git checkout repoo master
+git merge repoo staging
+git push repoo master
