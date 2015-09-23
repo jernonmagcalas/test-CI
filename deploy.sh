@@ -11,7 +11,7 @@ git config --global user.email = 'jernonmagcalas@gmail.com'
 git config --global user.name = 'jernon magcalas'
 
 echo "$TRAVIS_REPO_SLUG"
-git remote add repoo https://$username:$password@github.com/$TRAVIS_REPO_SLUG.git
+git remote add repoo https://jernonmagcalas:shylentnyt01@github.com/$TRAVIS_REPO_SLUG.git
 git fetch repoo
 git stash
 git checkout repoo/staging
