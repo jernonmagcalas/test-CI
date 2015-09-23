@@ -10,11 +10,11 @@ if[ $(TRAVIS_BRANCH) = 'staging' ] && (exit 0;)
 git config --global user.email = 'jernonmagcalas@gmail.com'
 git config --global user.name = 'jernon magcalas'
 
-git remove -v
+git remote -v
 
-git remote add repoo https://jernonmagcalas:shylentnyt01@github.com/$TRAVIS_REPO_SLUG.git
+git remote add repoo https://c32eb8616a51943af4dea2895426f5fbc07f5aaa@github.com/$TRAVIS_REPO_SLUG.git
 git fetch repoo
 git stash
 git checkout repoo/staging
 git merge $TRAVIS_COMMIT
-git push https://jernonmagcalas:shylentnyt01@github.com/$TRAVIS_REPO_SLUG.git staging
+git push https://c32eb8616a51943af4dea2895426f5fbc07f5aaa@github.com/$TRAVIS_REPO_SLUG.git staging
