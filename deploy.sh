@@ -4,7 +4,7 @@
 #fi
 
 set -ev
-echo echo $@
+echo $1
 exit 0;
 if[ $(TRAVIS_BRANCH) = 'staging' ] && (exit 0;)
 
