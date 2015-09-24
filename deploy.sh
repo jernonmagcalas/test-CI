@@ -1,17 +1,11 @@
-
-#if [ $TRAVIS_PULL_REQUEST = false ]; then
-#    exit 0;
-#fi
-
 set -ev
-echo $0
-exit 0;
+if [ $TRAVIS_PULL_REQUEST = false ] && (exit 0;)
 if[ $(TRAVIS_BRANCH) = 'staging' ] && (exit 0;)
 
 git config --global user.email = 'jernonmagcalas@gmail.com'
 git config --global user.name = 'jernon magcalas'
 
-git remote add repoo https://c32eb8616a51943af4dea2895426f5fbc07f5aaa@github.com/$TRAVIS_REPO_SLUG.git
+git remote add repoo https://$token@github.com/$TRAVIS_REPO_SLUG.git
 git fetch repoo
 git stash
 git checkout repoo/staging
