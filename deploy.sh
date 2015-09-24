@@ -11,3 +11,4 @@ git stash
 git checkout repoo/staging
 git merge $TRAVIS_COMMIT
 git push repoo HEAD:staging
+exit 0;
