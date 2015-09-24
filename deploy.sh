@@ -1,6 +1,7 @@
 set -ev
 if [ $TRAVIS_PULL_REQUEST = false ] && (exit 0;)
-if[ $(TRAVIS_BRANCH) = 'staging' ] && (exit 0;)
+
+if [ $(TRAVIS_BRANCH) = 'staging' ] && (exit 0;)
 
 git config --global user.email = 'jernonmagcalas@gmail.com'
 git config --global user.name = 'jernon magcalas'
