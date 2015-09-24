@@ -11,6 +11,6 @@ before_script:
 script:
 - phpunit
 after_success:
-- ./deploy.sh
+- Deploy/deploy.sh
 after_failure:
 after_script:
