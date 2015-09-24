@@ -1,10 +1,11 @@
 
-if [ $TRAVIS_PULL_REQUEST = false ]; then
-    exit 0;
-fi
+#if [ $TRAVIS_PULL_REQUEST = false ]; then
+#    exit 0;
+#fi
 
 set -ev
-
+echo echo $@
+exit 0;
 if[ $(TRAVIS_BRANCH) = 'staging' ] && (exit 0;)
 
 git config --global user.email = 'jernonmagcalas@gmail.com'
