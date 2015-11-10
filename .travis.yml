@@ -5,11 +5,11 @@ php:
 before_install :
 - /home/travis/.phpenv/versions/5.5/bin/composer self-update
 install:
-before_script:
-- chmod +x Deploy/deploy.sh
 script:
 - phpunit
 after_success:
-- Deploy/deploy.sh
+- chmod 600 ./.ssh/dream.pem
+- ssh -i ./.ssh/dream.pem dhc-user@67.205.60.52 -o "StrictHostKeyChecking no" exit
+- ./deploy production
 after_failure:
 after_script:
