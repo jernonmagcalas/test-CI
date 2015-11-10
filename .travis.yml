@@ -9,7 +9,7 @@ script:
 - phpunit
 after_success:
 - chmod 600 ./.ssh/dream.pem
-- ssh -i ./.ssh/dream.pem dhc-user@67.205.60.52 -o "StrictHostKeyChecking no" exit
+- ssh -i ./.ssh/dream.pem dhc-user@67.205.61.31 -o "StrictHostKeyChecking no" exit
 - ./deploy production
 after_failure:
 after_script:
